@@ -1,10 +1,58 @@
 <!DOCTYPE html>
 <html>
 <head lang="en">
+	<!--developed by davidwc-->
     <meta charset="UTF-8">
-    <title></title>
+	
+    <title>DNA Viewer</title>
+	
+	<script type="text/javascript" src="libraries/jquery-3.2.0.js"></script>
+	<script type="text/javascript" src="libraries/d3.v3.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/classes.js"></script>
+	<script type="text/javascript" src="js/methods.js"></script>
+	<script type="text/javascript" src="js/d3-methods.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="stylesheets/main.css">
 </head>
-<body>
 
+<body>
+	<div class="main">
+		<div class="visualization">
+			<svg id="svg">
+			</canvas>
+		</div>
+		
+		<div id="gene-info" class="title">
+			<h1>[Insert Gene-Name]</h1>
+			<h2>Species:[Insert species]</h2>
+			<h2>Nuclease:[Insert nuclease]</h2>
+			<h2>Size:[Insert size]</h2>
+		</div>
+	</div>
+	
+	<div id="tab-container" class="tabbed tabbed-1">
+		
+		<div id="features-tab" class="tab">
+			<h3>Features<h3>
+		</div>
+		
+		<div id="sequence-tab" class="tab tab2" >
+			<h3>Sequence<h3>
+		</div>
+		
+		<div id="main-info-container" class="main info-container">
+
+			<table>
+				<thead>
+					<tr id="title-row"> <th>Name</th> <th>Type</th> <th>Direction</th> <th>Start</th> <th>End</th> <th>Size</th> </tr>
+				</thead>
+				
+				<tbody id="feature-table-body">
+					<tr> <td>[Insert feature-Name]</td> <td>[Insert type]</td> <td>[Insert direction]</td> <td>[insert start]</td> <td>[insert end]</td> <td>[Insert size]</td> </tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
 </body>
 </html>
