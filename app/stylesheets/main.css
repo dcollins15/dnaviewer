@@ -1,0 +1,162 @@
+
+body {
+	font-family: Geneva, Tahoma, Verdana, sans-serif;
+	font-style: normal;
+	font-variant: normal;
+	
+	text-align: left;
+	
+	box-sizing: border-box;
+	
+	background-color: #FAFAFA;
+}
+
+.visualization {
+	width: 70%;
+	float: left;
+}
+
+.title {
+	width: 30%;
+	float: right;
+}
+
+.main {
+	width: 80%;
+	
+	border-radius: 5px;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+	
+	background-color: #FFFFFF;
+	
+	margin: 0 auto;
+	margin-bottom: 20px;
+	padding: 2%;
+	position: relative;
+	
+	overflow: auto;
+}
+
+.info-container {	
+	position: absolute;
+	left: 8%;
+	top: 40px;
+	
+	max-height: 300px;
+}
+
+.tab {	
+	float: left; 
+	width: 15%;
+	margin: 0px;
+	margin-left: 10%;
+	margin-right: 0px;
+	margin-bottom: -20px;
+	
+    box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+	border-radius: 5px;
+	background-color: #FFFFFF;
+	
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+.tab2{
+	margin-left: 0px;
+}
+
+.tabbed {
+	position: relative;
+}
+
+.tabbed-1:after {
+	position: absolute;
+    
+	content:'';
+    background-color: #FFFFFF;
+    
+	height:10px;
+    width:14.5%;
+	
+	top: 35px;
+	left: 10.25%;
+}
+
+.tabbed-2:after {
+	position: absolute;
+    
+	content:'';
+    background-color: #FFFFFF;
+    
+	height:10px;
+    width:14.5%;
+	
+	top: 35px;
+	left: 25.5%;
+}
+
+table{
+	width: 100%;
+	border-color: #FAFAFA;
+	border-style: solid;
+	border-width: 0.5px;
+	border-collapse: collapse;
+}
+
+th {
+	border-color: #FAFAFA;
+	border-style: solid;
+	border-width: 0.5px;
+	
+	padding: 5px;
+}
+
+#sequence-table-body td {
+	min-width: 15em;
+}
+
+tr:nth-child(odd) {
+	background-color: #FFFFFF;
+}
+
+tr:nth-child(even) {
+	background-color: #FAFAFA;
+}
+
+tr.active {
+	background-color: #DADADA;
+}
+
+h1 {
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 30px;
+}
+
+h2, th {
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 15px;
+}
+
+h3, td {
+	font-size: 13px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 100;
+	line-height: 20px;
+}
+
+svg {
+	width: 100%;	
+}
+
+path {
+	fill: #000000;
+	stroke: #000000;
+}
+
+path.active {
+	fill: #DADADA;
+	stroke: #DADADA;
+}
